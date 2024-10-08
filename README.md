@@ -22,9 +22,7 @@ This compound interest calculator helps users estimate how much their investment
 - **Styling**: (Add your styling tools, e.g., CSS, Sass, etc.)
 - **State Management**: React Hooks
 
-抱歉，下面是从“2. Install dependencies”开始的`.md`文件的完整Markdown代码，便于你一次性复制：
 
-```md
 ## Installation
 
 1. Clone the repository:
