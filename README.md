@@ -1,45 +1,104 @@
-## build-react-cli
-##### build-react-cli是帮助你快速创建生成react项目的脚手架工具，配置了多种可选择的不同类型项目模版。
-![Demonstration](https://github.com/Hzy0913/hanlibrary/blob/master/Demonstration.gif "Demonstration")
-### Installation
+# React Compound Interest Calculator
 
-```
-npm install -g build-react
-```
-### Usage
-```
-build-react init my-react
-```
-**tip：** 初始化项目是第一项选择项目模版提供三种类型。
-1. `init`为通用项目模版，配置了常用的react工具。
-2. `complete-project`为完整的react项目，包括请求工具，服务转发，登录注册，复杂嵌套路由。
-3. `simple-project`为简单项目模版，提供了react以及react-router基本配置。
-##### 初始化项目完成以后
-```
-cd my-react //进入项目目录
-npm install //安装项目依赖
-npm start //运行项目
-```
-### command
-###### 启动项目
-`npm start` 或者 `npm run dev`
-###### 启动项目后自动打开浏览器(传入 --o 参数)
-`npm start --o` 或者`npm start --open`
-###### 打包项目
-`npm run build`
-###### 打包项目并查看分析项目大小
-`npm run build --a`
-### config
-`config`目录下的`index.js`文件为项目webpack配置文件，包括有运行端口、地址、本地服务代理配置等一系列配置。
+This project is a simple compound interest calculator built using React. It allows users to calculate their potential earnings over time based on the initial principal, interest rate, compounding frequency, and investment duration.
 
-| 名称  | 类型  | 描述  |
-| ------------ | ------------ | ------------ |
-|  host |String   |  主机 |
-| port  | Number  | 端口  |
-| proxyTable  | Object  | 代理配置  |
-| useEslint  | Boolean  | 是否使用eslint  |
-| autoOpenBrowser  | Boolean  | 是否自动打开浏览器  |
-| errorOverlay  | Boolean  | 是否使用全屏报错提示  |
-|  notifyOnErrors | Boolean  | 是否使用消息通知  |
-| showEslintErrorsInOverlay  | Boolean  | 是否使用eslint全屏报错提示  |
-| bundleAnalyzerReport  | Boolean  | 是否使用打包编译完成后显示依赖分析  |
+## Introduction
+
+This compound interest calculator helps users estimate how much their investment could grow over time using compound interest. It is built with React and designed to be simple and easy to use.
+
+## Features
+
+- Calculates compound interest based on:
+  - Initial investment (principal)
+  - Annual interest rate
+  - Number of times interest is compounded per year
+  - Investment duration in years
+- Real-time updates as input values change
+- Simple and user-friendly interface
+
+## Technology Stack
+
+- **Frontend**: React
+- **Styling**: (Add your styling tools, e.g., CSS, Sass, etc.)
+- **State Management**: React Hooks
+
+抱歉，下面是从“2. Install dependencies”开始的`.md`文件的完整Markdown代码，便于你一次性复制：
+
+```md
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/react-compound-calculator.git
+   cd react-compound-calculator
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the React development server:
+
+   ```bash
+   npm start
+   ```
+
+   The app will be available at `http://localhost:3000`.
+
+4. For production build:
+
+   To create a production build, run:
+
+   ```bash
+   npm run build
+   ```
+
+   This will create an optimized build in the `build/` directory, ready for deployment.
+
+## Usage
+
+1. Open your browser and go to `http://localhost:3000` after starting the development server.
+2. Input the following data:
+   - **Principal**: The initial amount you plan to invest.
+   - **Annual Interest Rate**: The interest rate of your investment in percentage.
+   - **Compounding Frequency**: Choose how often the interest compounds (e.g., annually, quarterly, monthly).
+   - **Investment Duration**: The number of years you plan to invest.
+3. The calculator will automatically compute the total balance and interest earned over the specified period.
+
+## Formula
+
+The compound interest is calculated using the following formula:
+
+\[
+A = P \left(1 + \frac{r}{n}\right)^{nt}
+\]
+
+Where:
+
+- `A` = the future value of the investment/loan, including interest
+- `P` = the principal investment amount (the initial deposit or loan amount)
+- `r` = the annual interest rate (decimal)
+- `n` = the number of times that interest is compounded per year
+- `t` = the number of years the money is invested or borrowed for
+
+## Example
+
+For example, if you invest $1000 at an annual interest rate of 5%, compounded monthly, for 10 years, the formula would be:
+
+\[
+A = 1000 \left(1 + \frac{0.05}{12}\right)^{12 \times 10}
+\]
+
+This would give a total balance of approximately $1647.01 after 10 years.
+
+## Contributing
+
+Contributions are welcome! Feel free to open issues, submit pull requests, or suggest new features.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+```
