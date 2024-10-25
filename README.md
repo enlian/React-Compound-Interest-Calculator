@@ -1,102 +1,96 @@
-# React Compound Interest Calculator
+# React 複利計算機
 
-This project is a simple compound interest calculator built using React. It allows users to calculate their potential earnings over time based on the initial principal, interest rate, compounding frequency, and investment duration.
+このプロジェクトは、**React** を使用して構築されたシンプルな複利計算機です。ユーザーは、元本、利率、複利の頻度、および投資期間に基づいて、時間の経過とともに得られる潜在的な利益を計算できます。
 
-## Introduction
+## 概要
 
-This compound interest calculator helps users estimate how much their investment could grow over time using compound interest. It is built with React and designed to be simple and easy to use.
+この複利計算機は、ユーザーが投資に対して複利を使用してどれだけの利益を得ることができるかを推定するのに役立ちます。Reactで構築されており、シンプルで使いやすいデザインになっています。
 
-## Features
+## 機能
 
-- Calculates compound interest based on:
-  - Initial investment (principal)
-  - Annual interest rate
-  - Number of times interest is compounded per year
-  - Investment duration in years
-- Real-time updates as input values change
-- Simple and user-friendly interface
+- 以下に基づいて複利を計算します：
+  - 初期投資額（元本）
+  - 年間利率
+  - 年間の複利回数
+  - 投資期間（年）
+- 入力値が変更されるとリアルタイムで結果を更新
+- シンプルでユーザーフレンドリーなインターフェース
 
-## Technology Stack
+## 技術スタック
 
-- **Frontend**: React
-- **Styling**: (Add your styling tools, e.g., CSS, Sass, etc.)
-- **State Management**: React Hooks
+- **フロントエンド**: React
+- **スタイリング**: （スタイリングツールを追加、例：CSS、Sass など）
+- **状態管理**: React Hooks
 
+## インストール
 
-## Installation
+リポジトリをクローン：
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/react-compound-calculator.git
-   cd react-compound-calculator
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the React development server:
-
-   ```bash
-   npm start
-   ```
-
-   The app will be available at `http://localhost:3000`.
-
-4. For production build:
-
-   To create a production build, run:
-
-   ```bash
-   npm run build
-   ```
-
-   This will create an optimized build in the `build/` directory, ready for deployment.
-
-## Usage
-
-1. Open your browser and go to `http://localhost:3000` after starting the development server.
-2. Input the following data:
-   - **Principal**: The initial amount you plan to invest.
-   - **Annual Interest Rate**: The interest rate of your investment in percentage.
-   - **Compounding Frequency**: Choose how often the interest compounds (e.g., annually, quarterly, monthly).
-   - **Investment Duration**: The number of years you plan to invest.
-3. The calculator will automatically compute the total balance and interest earned over the specified period.
-
-## Formula
-
-The compound interest is calculated using the following formula:
-
-\[
-A = P \left(1 + \frac{r}{n}\right)^{nt}
-\]
-
-Where:
-
-- `A` = the future value of the investment/loan, including interest
-- `P` = the principal investment amount (the initial deposit or loan amount)
-- `r` = the annual interest rate (decimal)
-- `n` = the number of times that interest is compounded per year
-- `t` = the number of years the money is invested or borrowed for
-
-## Example
-
-For example, if you invest $1000 at an annual interest rate of 5%, compounded monthly, for 10 years, the formula would be:
-
-\[
-A = 1000 \left(1 + \frac{0.05}{12}\right)^{12 \times 10}
-\]
-
-This would give a total balance of approximately $1647.01 after 10 years.
-
-## Contributing
-
-Contributions are welcome! Feel free to open issues, submit pull requests, or suggest new features.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+```bash
+git clone https://github.com/yourusername/react-compound-calculator.git
+cd react-compound-calculator
 ```
+
+依存関係をインストール：
+
+```bash
+npm install
+```
+
+React 開発サーバーを起動：
+
+```bash
+npm start
+```
+
+アプリは `http://localhost:3000` で利用可能になります。
+
+### プロダクションビルド：
+
+プロダクションビルドを作成するには、以下のコマンドを実行します：
+
+```bash
+npm run build
+```
+
+これにより、最適化されたビルドが `build/` ディレクトリに作成され、デプロイの準備が整います。
+
+## 使い方
+
+開発サーバーを起動した後、ブラウザで `http://localhost:3000` にアクセスします。
+
+以下のデータを入力します：
+- **元本**: 投資予定の初期金額
+- **年間利率**: 投資の利率（パーセンテージ）
+- **複利頻度**: 複利が適用される頻度（例：年次、四半期ごと、毎月）
+- **投資期間**: 投資予定の年数
+
+計算機は指定された期間の総残高と得られた利息を自動的に計算します。
+
+## 計算式
+
+複利は以下の式で計算されます：
+
+\[ A = P \left(1 + \frac{r}{n}\right)^{nt} \]
+
+- **A** = 利息を含めた将来の投資価値
+- **P** = 元本投資額（初期投資額）
+- **r** = 年間利率（小数）
+- **n** = 年間の複利回数
+- **t** = 投資または借入期間の年数
+
+## 例
+
+例えば、$1000 を年間 5% の利率で、毎月複利で 10 年間投資すると、計算式は次のようになります：
+
+\[ A = 1000 \left(1 + \frac{0.05}{12}\right)^{12 \times 10} \]
+
+これにより、10 年後の総残高は約 $1647.01 となります。
+
+## 貢献
+
+貢献は大歓迎です！問題をオープンしたり、プルリクエストを送ったり、新しい機能の提案を自由に行ってください。
+
+## ライセンス
+
+このプロジェクトは MIT ライセンスの下でライセンスされています。詳細は LICENSE ファイルを参照してください。
