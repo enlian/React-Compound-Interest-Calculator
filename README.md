@@ -33,8 +33,8 @@
 リポジトリをクローン：
 
 ```bash
-git clone https://github.com/yourusername/react-compound-calculator.git
-cd react-compound-calculator
+git clone https://github.com/enlian/React-Compound-Interest-Calculator.git
+cd React-Compound-Interest-Calculator
 ```
 
 依存関係をインストール：
