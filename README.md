@@ -2,6 +2,8 @@
 
 このプロジェクトは、**React** を使用して構築されたシンプルな複利計算機です。ユーザーは、元本、利率、複利の頻度、および投資期間に基づいて、時間の経過とともに得られる潜在的な利益を計算できます。
 
+**Demo:** <a href="https://react-compound-interest-calculator-ivory.vercel.app/">react-compound-interest-calculator-ivory.vercel.app</a>
+
 <img src="./public/sc.png" width="400"/>
 
 ## 概要
