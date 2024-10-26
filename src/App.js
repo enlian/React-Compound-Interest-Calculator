@@ -5,7 +5,7 @@ function App() {
   const [principal, setPrincipal] = useState(1000);
   const [rate, setRate] = useState(5);
   const [years, setYears] = useState(10);
-  const [compoundFrequency, setCompoundFrequency] = useState(12);
+  const [compoundFrequency, setCompoundFrequency] = useState(1);
   const [result, setResult] = useState(null);
   const [growthRate, setGrowthRate] = useState(null);
   const [totalEarnings, setTotalEarnings] = useState(null);
