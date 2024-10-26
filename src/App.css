@@ -1,38 +1,110 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calculator {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.calculator label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.result-table, .yearly-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.result-table th, .result-table td, .yearly-table th, .yearly-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.result-table th, .yearly-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.result-table tr:hover, .yearly-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.result-table td, .yearly-table td {
+  font-size: 16px;
+}
+
+.yearly-table th {
+  background-color: #e0e0e0;
+}
+
+.yearly-table td {
+  padding: 12px;
+}
+
+@media (max-width: 600px) {
+  .calculator {
+    padding: 10px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  button {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .result-table td, .yearly-table td {
+    font-size: 14px;
+    padding: 8px;
   }
 }
